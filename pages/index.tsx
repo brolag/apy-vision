@@ -11,7 +11,7 @@ export default function Home() {
   const { address } = addressData as any
 
   return address ? (
-    <main className="max-w-full m-auto">
+    <main className="max-w-full m-auto text-gray-800">
       <TopBanner />
       <Header address={address} />
       <div className="p-10 flex flex-row">
