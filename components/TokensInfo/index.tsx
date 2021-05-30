@@ -14,7 +14,7 @@ export default function TokensInfo({ tokens }) {
               {token.tokenStartingBalance.toFixed(2)} →{" "}
               {token.tokenCurrentBalance.toFixed(2)} {token.tokenName}
             </div>
-            <div className={numberClasses}>
+            <div className={`${numberClasses}`}>
               {token.tokenUsdGain.toFixed(2)} {token.tokenName}{" "}
               {applyGainsFormat(token.tokenCurrentBalance)}
             </div>

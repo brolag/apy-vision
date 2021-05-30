@@ -14,7 +14,7 @@ export default function LPGains({ userPool }) {
       <div className="font-bold">
         {applyCurrencyFormat(userPool.netGainUsd)}
       </div>
-      <div className={numberClasses}>
+      <div className={`${numberClasses}`}>
         {applyGainsPctFormat(userPool.netGainPct)} (
         {applyGainsFormat(userPool.netGainUsd)})
       </div>
