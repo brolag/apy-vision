@@ -6,6 +6,7 @@ module.exports = {
     },
     "extends": [
         "plugin:react/recommended",
+        "plugin:tailwind/recommended",
         "standard",
         "prettier"
     ],
