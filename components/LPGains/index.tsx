@@ -3,10 +3,10 @@ import {
   applyGainsFormat,
   applyGainsPctFormat,
 } from "@utils/formatStringUtils"
-import { getNumberColorClass } from "@utils/getNumberColor"
 
 export default function LPGains({ userPool }) {
-  const numberColorClass = getNumberColorClass(userPool.netGainUsd)
+  const numberColorClass =
+    userPool.netGainUsd < 0 ? "text-red-700" : "text-green-500"
   const numberClasses = `${numberColorClass} font-bold text-sm`
 
   return (
